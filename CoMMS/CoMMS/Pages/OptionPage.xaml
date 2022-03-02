@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CoMMS.OptionPage">
+    <ContentPage.Title>환경설정</ContentPage.Title>
+    <ContentPage.Content>
+        <StackLayout>
+            <ScrollView VerticalOptions="FillAndExpand">
+                <StackLayout Padding="10" VerticalOptions="FillAndExpand" Spacing="20">
+                    <Frame CornerRadius="15" BackgroundColor="LightSkyBlue">
+                    <StackLayout x:Name="DBSetting" Spacing="10">
+                        <Label Text="DB" FontSize="Title" FontAttributes="Bold"></Label>
+                        <StackLayout Orientation="Horizontal">
+                            <Label Text="DB IP" VerticalTextAlignment="Center" HorizontalTextAlignment="Center" VerticalOptions="Center" FontSize="Medium"></Label>
+                            <Entry x:Name="txtDB_IP" HorizontalOptions="EndAndExpand" HorizontalTextAlignment="Center" WidthRequest="{Binding Width}" ClearButtonVisibility="WhileEditing"></Entry>
+                        </StackLayout>
+                        <StackLayout Orientation="Horizontal">
+                                <Label Text="DB PORT" VerticalTextAlignment="Center" HorizontalTextAlignment="Center" VerticalOptions="Center" FontSize="Medium"></Label>
+                                <Entry x:Name="txtDB_PORT" HorizontalOptions="EndAndExpand" HorizontalTextAlignment="Center" WidthRequest="{Binding Width}" ClearButtonVisibility="WhileEditing"></Entry>
+                        </StackLayout>
+                        <StackLayout Orientation="Horizontal">
+                                <Label Text="DBName"  VerticalTextAlignment="Center" HorizontalTextAlignment="Center" VerticalOptions="Center" FontSize="Medium"></Label>
+                                <Entry x:Name="txtDBName" HorizontalOptions="EndAndExpand" HorizontalTextAlignment="Center" WidthRequest="{Binding Width}" ClearButtonVisibility="WhileEditing"></Entry>
+                        </StackLayout>
+                        <StackLayout Orientation="Horizontal">
+                                <Label Text="ID" VerticalTextAlignment="Center" HorizontalTextAlignment="Center" VerticalOptions="Center" FontSize="Medium"></Label>
+                                <Entry x:Name="txtDB_ID"  HorizontalOptions="EndAndExpand" HorizontalTextAlignment="Center" WidthRequest="{Binding Width}" ClearButtonVisibility="WhileEditing"></Entry>
+                        </StackLayout>
+                        <StackLayout Orientation="Horizontal">
+                                <Label Text="PW" VerticalTextAlignment="Center" HorizontalTextAlignment="Center" VerticalOptions="Center" FontSize="Medium"></Label>
+                                <Entry x:Name="txtDB_PW" IsPassword="True" HorizontalOptions="EndAndExpand" HorizontalTextAlignment="Center" WidthRequest="{Binding Width}" ClearButtonVisibility="WhileEditing"></Entry>
+                        </StackLayout>
+                    </StackLayout>
+                    </Frame>
+                    <Frame CornerRadius="15" BackgroundColor="LightSkyBlue">
+                        <StackLayout x:Name="MstCode" Spacing="10">
+                            <Label Text="조건" FontSize="Title" FontAttributes="Bold"></Label>
+                        <StackLayout Orientation="Horizontal">
+                            <Label Text="MstCode" VerticalTextAlignment="Center" HorizontalTextAlignment="Center" VerticalOptions="Center" FontSize="Medium"></Label>
+                                <Entry x:Name="txtMstCode" Placeholder="Like 조건입니다." HorizontalOptions="EndAndExpand" HorizontalTextAlignment="Center" WidthRequest="{Binding Width}" ClearButtonVisibility="WhileEditing"></Entry>
+                        </StackLayout>
+                    </StackLayout>
+                    </Frame>
+                </StackLayout>
+            </ScrollView>
+            <StackLayout VerticalOptions="EndAndExpand" Padding="10">
+                <Button x:Name="btn_Save" Text="저장" CornerRadius="10" HeightRequest="80" FontSize="30" TextColor="White" BackgroundColor="#0066b2" FontAttributes="Bold" Clicked="SaveOption"></Button>
+            </StackLayout>
+        </StackLayout>
+        
+    </ContentPage.Content>
+</ContentPage>
