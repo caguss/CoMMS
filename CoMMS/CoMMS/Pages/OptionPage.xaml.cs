@@ -1,4 +1,5 @@
 ﻿
+using CoMMS.Service;
 using CoMMS.ViewModels;
 using System;
 
@@ -63,14 +64,20 @@ namespace CoMMS
             Application.Current.Properties["Resorce_Mst_Code"] = txtMstCode.Text;
             await Application.Current.SavePropertiesAsync();
 
-            await DisplayAlert("완료", "저장이 완료되었습니다. 어플리케이션을 완전히 종료 후 재실행해주세요.", "확인");
+            await DisplayAlert("완료", "저장이 완료되었습니다. 어플리케이션을 재실행해주세요.", "확인");
             if (Navigation.ModalStack.Count > 0)
             {
                 await Navigation.PopModalAsync();
+                
             }
             else
             {
-                Application.Current.MainPage = new NavigationPage(new MainPage());
+                INativeHelper nativeHelper = null;
+                nativeHelper = DependencyService.Get<INativeHelper>();
+                if (nativeHelper != null)
+                {
+                    nativeHelper.CloseApp();
+                }
             }
         }
 
