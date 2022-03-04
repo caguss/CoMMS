@@ -36,7 +36,7 @@ namespace CoMMS
                         mstcode = Application.Current.Properties["Resorce_Mst_Code"].ToString();
                     else
                         mstcode = rm.GetString("Resorce_Mst_Code");
-
+         
 
                     cmd.Parameters.Add(new MySqlParameter("@v_MstCode", MySqlDbType.VarChar, 50));
                     cmd.Parameters["@v_MstCode"].Value = mstcode;

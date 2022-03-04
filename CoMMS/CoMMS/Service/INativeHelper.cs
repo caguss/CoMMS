@@ -2,10 +2,11 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace CoMMS.Service
+namespace CoMMS
 {
     public interface INativeHelper
     {
         void CloseApp();
+
     }
 }

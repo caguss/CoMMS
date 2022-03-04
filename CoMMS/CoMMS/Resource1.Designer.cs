@@ -61,6 +61,24 @@ namespace CoMMS {
         }
         
         /// <summary>
+        ///   적용과(와) 유사한 지역화된 문자열을 찾습니다.
+        /// </summary>
+        public static string Alarm {
+            get {
+                return ResourceManager.GetString("Alarm", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   0과(와) 유사한 지역화된 문자열을 찾습니다.
+        /// </summary>
+        public static string Condition {
+            get {
+                return ResourceManager.GetString("Condition", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   coever과(와) 유사한 지역화된 문자열을 찾습니다.
         /// </summary>
         public static string DB_ID {

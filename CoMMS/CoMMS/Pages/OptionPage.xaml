@@ -34,12 +34,21 @@
                     </Frame>
                     <Frame CornerRadius="15" BackgroundColor="LightSkyBlue">
                         <StackLayout x:Name="MstCode" Spacing="10">
-                            <Label Text="조건" FontSize="Title" FontAttributes="Bold"></Label>
-                        <StackLayout Orientation="Horizontal">
-                            <Label Text="MstCode" VerticalTextAlignment="Center" HorizontalTextAlignment="Center" VerticalOptions="Center" FontSize="Medium"></Label>
-                                <Entry x:Name="txtMstCode" Placeholder="Like 조건입니다." HorizontalOptions="EndAndExpand" HorizontalTextAlignment="Center" WidthRequest="{Binding Width}" ClearButtonVisibility="WhileEditing"></Entry>
+                            <Label Text="동작모드" FontSize="Title" FontAttributes="Bold"></Label>
+                            <StackLayout Orientation="Horizontal">
+                                <Label Text="MstCode" VerticalTextAlignment="Center" HorizontalTextAlignment="Center" VerticalOptions="Center" FontSize="Medium"></Label>
+                                    <Entry x:Name="txtMstCode" Placeholder="Like 조건입니다." HorizontalOptions="EndAndExpand" HorizontalTextAlignment="Center" WidthRequest="{Binding Width}" ClearButtonVisibility="WhileEditing"></Entry>
+                            </StackLayout>
+                            <StackLayout Orientation="Horizontal">
+                                <Label Text="조건수치" VerticalTextAlignment="Center" HorizontalTextAlignment="Center" VerticalOptions="Center" FontSize="Medium"></Label>
+                                <Entry x:Name="txtCondition" Keyboard="Numeric" Placeholder="기본 값은 0입니다." HorizontalOptions="EndAndExpand" HorizontalTextAlignment="Center" WidthRequest="{Binding Width}" ClearButtonVisibility="WhileEditing"></Entry>
+                            </StackLayout>
+                            <StackLayout Orientation="Horizontal">
+                                <Label Text="알람" VerticalTextAlignment="Center" HorizontalTextAlignment="Center" VerticalOptions="Center" FontSize="Medium" ></Label>
+                                <ImageButton Source="help_circle.png" BackgroundColor="Transparent" HeightRequest="25" Clicked="ImageButton_Clicked"></ImageButton>
+                                <Picker x:Name="pkAlarm" HorizontalOptions="EndAndExpand" HorizontalTextAlignment="Center" WidthRequest="{Binding Width}"></Picker>
+                            </StackLayout>
                         </StackLayout>
-                    </StackLayout>
                     </Frame>
                 </StackLayout>
             </ScrollView>

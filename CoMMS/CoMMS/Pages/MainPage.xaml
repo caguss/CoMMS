@@ -13,7 +13,7 @@
                 <StackLayout Margin="-20" Orientation="Horizontal">
                     <Label Text="비가동 Count :" TextColor="White" FontSize="20" VerticalOptions="Center" Padding="15,0,0,0"></Label>
                     <Label x:Name="lblCount" Text="0" FontSize="20" TextColor="White" VerticalOptions="Center"></Label>
-                    <ActivityIndicator x:Name="indicator" BackgroundColor="#0066b2" IsVisible="True" IsRunning="True" HorizontalOptions="EndAndExpand" Color="White"/>
+                    <ActivityIndicator x:Name="indicator" BackgroundColor="Transparent" IsVisible="True" IsRunning="True" HorizontalOptions="EndAndExpand" Color="White"/>
                 </StackLayout>
             </Frame>
             <ListView x:Name="Equiplist" SeparatorVisibility="Default" HeightRequest="300" HasUnevenRows="True" SelectionMode="None">

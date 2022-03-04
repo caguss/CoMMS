@@ -62,6 +62,8 @@
     <PackageReference Include="Xamarin.Essentials" Version="1.6.1" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AndroidNotificationManager.cs" />
+    <Compile Include="BroadcastReceiver.cs" />
     <Compile Include="MainActivity.cs" />
     <Compile Include="NativeHelper.cs" />
     <Compile Include="Resources\Resource.designer.cs" />
@@ -107,6 +109,9 @@
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\drawable\Splash.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\help_circle.png" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
   <ProjectExtensions>
