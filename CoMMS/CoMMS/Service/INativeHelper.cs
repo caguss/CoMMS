@@ -7,6 +7,5 @@ namespace CoMMS
     public interface INativeHelper
     {
         void CloseApp();
-
     }
 }

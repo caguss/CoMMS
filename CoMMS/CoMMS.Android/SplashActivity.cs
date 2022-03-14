@@ -13,7 +13,7 @@ using System.Threading;
 
 namespace CoMMS.Droid
 {
-    [Activity(Label = "CoMMS", RoundIcon = "@mipmap/icon", Icon = "@mipmap/icon", Theme = "@style/SplashTheme", MainLauncher = true, NoHistory = true, ConfigurationChanges = ConfigChanges.ScreenSize | ConfigChanges.Orientation)]
+    [Activity(Label = "CoMMS", RoundIcon = "@mipmap/icon", Icon = "@mipmap/icon", MainLauncher = true, Theme = "@style/SplashTheme", NoHistory = true, ConfigurationChanges = ConfigChanges.ScreenSize | ConfigChanges.Orientation)]
     public class SplashActivity : Activity
     {
         protected override void OnCreate(Bundle bundle)
@@ -43,7 +43,7 @@ namespace CoMMS.Droid
         {
             //await Task.Delay(1000); // Simulate a bit of startup work.
             //Thread.Sleep(100);
-            StartActivity(new Intent(Application.Context, typeof(MainActivity)));
+            StartActivity(new Intent(Application.Context, typeof(SecondSplash)));
             Finish();
         }
     }

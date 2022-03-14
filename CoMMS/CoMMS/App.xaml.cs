@@ -7,7 +7,7 @@ namespace CoMMS
 {
     public partial class App : Application
     {
-        public static bool IsUnexpected = true;
+        public bool IsUnexpected = true;
 
         public App()
         {
