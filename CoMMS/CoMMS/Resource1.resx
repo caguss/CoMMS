@@ -127,18 +127,18 @@
     <value>coever</value>
   </data>
   <data name="DB_IP" xml:space="preserve">
-    <value>211.194.193.56</value>
+    <value></value>
   </data>
   <data name="DB_NAME" xml:space="preserve">
-    <value>platform_develop</value>
+    <value></value>
   </data>
   <data name="DB_PORT" xml:space="preserve">
-    <value>3306</value>
+    <value></value>
   </data>
   <data name="DB_PW" xml:space="preserve">
-    <value>7N4F2&lt;{mDs%7b3-.</value>
+    <value>{mDs%7b3-.</value>
   </data>
   <data name="Resorce_Mst_Code" xml:space="preserve">
-    <value>DK</value>
+    <value></value>
   </data>
 </root>
